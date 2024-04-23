@@ -1,0 +1,85 @@
+//Tentei mas não consegui terminar e nem testar (DEU TUDO ERRADO).
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Jogador {
+
+    String nome;
+    int votos;
+
+    public void incrementaUmVoto() {
+        this.votos++;
+    }
+
+    public String getName() {
+        return nome;
+    }
+
+    public int getVotos() {
+        return votos;
+    }
+public class casaMaisVigiada{}
+    public static void main(String[] args) {
+
+        ArrayList<String> jogador = new ArrayList<String>();
+
+        jogador.add("Alane Dias");
+        jogador.add("Beatriz Reis");
+        jogador.add("Davi Brito");
+        jogador.add("Deniziane Ferreira");
+        jogador.add("Fernanda Bande");
+        jogador.add("Giovanna Lima");
+        jogador.add("Giovanna Pitel");
+        jogador.add("Isabelle Nogueira");
+        jogador.add("Juninho");
+        jogador.add("Leydi Elen");
+        jogador.add("Lucas Henrique");
+        jogador.add("Lucas Luigi");
+        jogador.add("Lucas Pizane");
+        jogador.add("Marcus Vinicius");
+        jogador.add("Matteus Amaral");
+        jogador.add("Maycon Cosmer");
+        jogador.add("MC Bin Laden");
+        jogador.add("Michel Nogueira");
+        jogador.add("Nizam");
+        jogador.add("Raquele Cardozo");
+        jogador.add("Rodriguinho");
+        jogador.add("halyta Alves");
+        jogador.add("Vanessa Lopes");
+        jogador.add("Vinicius Rodrigues");
+        jogador.add("Wanessa Camargo");
+        jogador.add("Yasmin Brunet");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Em quem voce");
+
+        String voto = sc.nextLine();
+        while (!voto.equalsIgnoreCase("Sair")){
+            boolean encontrado = false;
+
+            for (Jogador jogador : participantes){
+                if (Jogador.getNome().equalsIgnoreCase(voto)){
+                    jogador.incrementaUmVoto();
+                    encontrado = true;
+                    break;
+                }
+                if (!encontrado){
+                    System.out.println("Participante não encontrado. Tente novamente!");
+
+                }
+                voto = sc.nextline();
+
+            }
+            Jogador mais votado = participantes.get(0);
+            for(Jogador jogador : participantes){
+                if (Jogador.getVotos() > mais.Votado.getVotos() {
+                    maisVotado = jogador;
+                }
+            }
+            System.out.println("O participante mais votado para a eliminação é: " + maisVotado.getNome());
+        }
+
+    }
+}
+
